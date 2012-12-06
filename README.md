@@ -5,8 +5,8 @@ Recomendamos que primeiramente realize backup completo do seu site, banco e dado
 
 Requerimentos
 
-•  Magento 1.4.2.0 ou superior
-•	PHP 5.2.0 ou superior
+* Magento 1.4.2.0 ou superior
+* PHP 5.2.0 ou superior
 
 Instalações
 
@@ -26,6 +26,6 @@ Configuração
 
 Customização
 
-	Além de utilizar o campo mensagem para customizar o texto que será exibido no momento da escolha da forma de pagamento, também é possível pode efetuar alterações visuais via CSS (skin/frontend/default/default/css/evolucard/evolucard.css) e modificando o HTML no arquivo de template pay.xml, localizado em app/design/frontend/default/default/template/pay/form/pay.html
+Além de utilizar o campo mensagem para customizar o texto que será exibido no momento da escolha da forma de pagamento, também é possível pode efetuar alterações visuais via CSS (skin/frontend/default/default/css/evolucard/evolucard.css) e modificando o HTML no arquivo de template pay.xml, localizado em app/design/frontend/default/default/template/pay/form/pay.html
 
-* Você deve apagar o jQuery para que não ocorra o carregamento do arquivo mais de uma vez, o que vai ocasionar o não funcionamento.
+Você deve apagar o jQuery para que não ocorra o carregamento do arquivo mais de uma vez, o que vai ocasionar o não funcionamento.
