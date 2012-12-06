@@ -1,0 +1,15 @@
+/**
+ * Arquivo de folhas de estilos do módulo de pagamentos Evolucard
+ */
+ 
+.box-payments  { background:#fff url(../../images/bkg_account_box.gif) 0 0 repeat-x; border:1px solid #ccc; border-color:#ccc #999 #999 #ccc; padding:15px; margin: 0 0 20px; }
+.box-payments .box-head  { border-bottom:1px solid #d9dde3; margin:0 0 10px; text-align:right; height: 20px; }
+.box-payments .box-head h2 { float:left; margin:0; font-size:13px; font-weight:bold; text-transform:uppercase; background-position:0 0; background-repeat:no-repeat; padding-left:21px; color:#e65505;background-image:url(../../images/i_folder-table.gif); }
+
+.box-left, .box-right   { width:48.5%; }
+.box-left               { float:left; }
+.box-right              { float:right; }
+
+#div-confirm-evolucard-link { display: none; float: left; width: 900px; text-align: center; }
+
+#msg-evolucard-onepage { background: url(../../images/evolucard/evolucard-logo.png) 0 0 no-repeat; background-position: right top; height: 60px; padding-right: 200px; }

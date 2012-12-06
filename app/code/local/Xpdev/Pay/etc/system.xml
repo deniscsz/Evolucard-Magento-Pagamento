@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+   <sections>
+        <payment>
+            <groups>
+                <pay translate="label" module="pay">
+                    <label>Evolucard</label>
+                    <sort_order>670</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Ativado</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <title translate="label">
+                            <label>Título</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </title>
+                        <message translate="label">
+							<label>Mensagem</label>
+							<frontend_type>textarea</frontend_type>
+                            <comment>Essa mensagem será exibida na área de seleção do pagamento no momento do Checkout</comment>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</message>
+                        <evocode translate="label">
+                            <label>Código do Estabelecimento (Evolucard)</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </evocode>
+                          <cielocode translate="label">
+                            <label>Código do Estabelecimento (Cielo)</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Campo Opcional</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </cielocode>
+                          <cielokey translate="label">
+                            <label>Chave de Acesso da Cielo</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Campo Opcional</comment>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </cielokey>
+                          <redecardcode translate="label">
+                            <label>Código do Estabelecimento (RedeCard)</label>
+							<frontend_type>text</frontend_type>
+                            <comment>Campo Opcional</comment>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </redecardcode>
+                          <responsa translate="label">
+                            <label>Responsável pelo Parcelamento</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Xpdev_Pay_Model_Source_Responsavel</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </responsa>
+                          <istest translate="label">
+                            <label>Ambiente de Teste</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>Desabilitar essa opção implica em Ambiente de Produção</comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </istest>
+                          <parcelamento>
+                            <label>Formas de Parcelamento</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Xpdev_Pay_Model_Source_Parcelamento</source_model>
+                            <comment></comment>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </parcelamento>
+                    </fields>
+                </pay>
+            </groups>
+        </payment>
+    </sections>
+</config>

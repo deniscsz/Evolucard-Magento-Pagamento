@@ -1,0 +1,10 @@
+<?php $_code=$this->getMethodCode() ?>
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li id="msg-evolucard-onepage">
+    <?php if(strlen($this->getMethod()->getConfigData('message')) > 2): ?>
+        <?php echo $this->getMethod()->getConfigData('message');?>
+    <?php else: ?>
+        <p>N&atilde;o conhece a evolucard? <a href="http://www.evolucard.com.br/">Clique aqui</a>!</p>
+    <?php endif; ?>
+    </li>
+</ul>

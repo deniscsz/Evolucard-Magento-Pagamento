@@ -1,0 +1,19 @@
+<?php
+
+?>
+<p>
+    <strong><?php echo $this->getMethod()->getTitle() ?></strong>
+    <?php //var_dump($this->isShowPaylink()); ?>
+    <?php if ($this->isShowPaylink() === 1 || Mage::getSingleton("core/session")->getInvoiceMail() === 1): ?>
+        <br />ID da transação: <?php echo $this->returnTransaction() ? ''.$this->returnTransaction().'' : 'Não disponível' ; ?>
+    <?php else: ?>
+        <?php if ($this->isShowPaylink() === true): ?>
+            <br />(<a href="<?php echo $this->getPaymentUrl(); ?>" onclick="this.target='_blank'">Pagar com Evolucard</a>)
+        <?php else: ?>
+            <?php if ($this->isShowPaylink() === false): ?>
+                <?php print($this->isShowPaylink()); ?>
+                <br/>O pagamento será efetuado a seguir.
+            <?php endif; ?>
+        <?php endif; ?>
+    <?php endif; ?>
+</p>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/jquery.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/noConflict.js</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/evolucard/evolucard.css</name></action>
+        </reference>
+    </default>
+    <pay_index_index>
+        <reference name="content">
+            <block type="pay/pay" name="pay" template="pay/pay.phtml" />
+        </reference>
+    </pay_index_index>
+</layout> 
